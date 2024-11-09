@@ -182,7 +182,7 @@ body, html {
       .graphic1 {
         position: absolute;
         z-index: 2;
-        background-image: url('assets/graphic1.svg');
+        background-image: url('graphic1.svg');
         top: 150px;
         left: 415px;
         width: 250px;
@@ -195,7 +195,7 @@ body, html {
         position: absolute;
         z-index: 2;
         background-repeat: no-repeat;
-        background-image: url('assets/graphic2.svg');
+        background-image: url('graphic2.svg');
         top: 1332px;
         left: 618px;
         width: 900px;
