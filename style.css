@@ -1,0 +1,207 @@
+/* Import Poppins and Lora fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@700&display=swap');
+/* Setup to center the poster frame */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color:gray;
+  }
+  
+  /* Poster frame with a portrait dimension and a background color with specified opacity*/
+  .poster-frame {
+    position: relative;  /* Set the frame as the positioning context */
+    width: 1080px;
+    height: 1920px;
+    background-color: #D1E3C5;
+    opacity: .7; /* #D1E3C5 with 70% opacity */
+    line-height: height;
+  }
+
+  /* HEADLINE */
+    /* Styling for the red dash behind the headline "TAMA NA" */
+    .red-dash {
+      position: absolute;
+      width: 720px;
+      height: 30px;
+      top: 395px;
+      left: 180px;
+      background-color: #FF0000;
+      opacity: .5; /* Red color with 50% opacity */
+      z-index: 1;
+    }
+
+    /* Styling for the headline "TAMA NA" */
+    .headline-tama-na {
+      font-family: 'Poppins', sans-serif;
+      font-size: 120px;
+      font-weight: bold;
+      color: #000000;
+      position: absolute;
+      width: 600px;
+      height: 140px;
+      top: calc(340px - 20px);
+      left: 240px;
+      z-index: 2; /* Displayed in front of the red dash */
+    }
+
+    /* Styling for the headline "I-TAMA NA"*/
+    .headline-i-tama-na {
+      font-family: 'Poppins', sans-serif;
+      font-size: 120px;
+      font-weight: bold;
+      color: #000000;
+      position: absolute;
+      width: 720px;
+      height: 140px;
+      top: calc(480px - 20px);
+      left: 180px;
+    }
+
+    /* set color of "TAMA" into green */
+    .tama-color {
+      color: #006400; 
+    }
+  
+  /* SUBHEADLINE */
+    /* inserting seperator lines between headline, subheadline, and final line */
+    .separator-line {
+      position: absolute;
+      width: 1020px; /* Length of the line */
+      height: 5px;   /* Thickness of the line */
+      background-color: #000000;
+      z-index: 2;
+    }
+    /* specific positioning of separator lines */
+    .hline-1 {
+      top: 717.5px; /* between headline and subheadline */
+      left: 30px;
+    }
+  
+    .hline-2 {
+      top: 1197.5px; /* between subheadline and final line */
+      left: 30px;
+    }
+
+    /* Styling for the subheadline "MUNDO'Y ISANG PAMANA,"*/
+    .subheadline-mundo {
+      font-family: 'Lora', serif;
+      font-size: 75px;
+      font-weight: 400;
+      color: #000000;
+      position: absolute;
+      width: 1080px;
+      height: 100px;
+      top: 810px;
+      left: 0px;
+    }
+
+    /* set color of letter P in "PAMANA" into brown, and its font-weight into bold*/
+    .pamana-color {
+      color: #693604; 
+      font-weight: bold;
+    }
+
+    /* Styling for the subheadline "ATING PANGALAGAAN,"*/
+    .subheadline-ating {
+      font-family: 'Lora', serif;
+      font-size: 75px;
+      font-weight: 400;
+      color: #000000;
+      position: absolute;
+      width: 1080px;
+      height: 100px;
+      top: 910px;
+      left: 0px;
+    }
+
+    /* set color of letter P in "PANGALAGAAN" into brown, and its font-weight into bold */
+    .pangalagaan-color {
+      color: #693604; 
+      font-weight: bold;
+    }
+
+    /* Styling for the subheadline "ANUMANG PAGKAKAIBA,"*/
+    .subheadline-anumang {
+      font-family: 'Lora', serif;
+      font-size: 75px;
+      font-weight: 400;
+      color: #000000;
+      position: absolute;
+      width: 1080px;
+      height: 100px;
+      top: 1010px;
+      left: 0px;
+    }
+
+    /* set color of letter P in "PAGKAKAIBA" into brown, and its font-weight into bold */
+    .pagkakaiba-color {
+      color: #693604; 
+      font-weight: bold;
+    }
+
+  /* FINAL LINE */
+    /* Styling for the final line "TAYO'Y PILIPINO"*/
+    .final-line-tayo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 100px;
+      font-weight: bold;
+      color: #000000;
+      position: absolute;
+      width: 1020px;
+      height: 140px;
+      top: 1300px;
+      left: 30px;
+    }
+
+    /* set color of the word "PILIPINO" into brown */
+    .PILIPINO-color {
+      color: #693604; 
+    }
+
+    /* Styling for the final line "DAPAT MAGKAISA!"*/
+    .final-line-dapat {
+      font-family: 'Poppins', sans-serif;
+      font-size: 100px;
+      font-weight: bold;
+      color: #000000;
+      position: absolute;
+      width: 1020px;
+      height: 140px;
+      top: 1440px;
+      left: 30px;
+    }
+
+  /* Inserting few graphics as SVG file for final touches */
+    
+    /* Specific styling for graphic 1 */
+      .graphic1 {
+        position: absolute;
+        z-index: 2;
+        background-image: url('assets/graphic1.svg');
+        top: 150px;
+        left: 415px;
+        width: 250px;
+        height: 120px;
+        fill: #964B00;
+      }
+    
+    /* Specific styling for graphic 2 */
+      .graphic2 {
+        position: absolute;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-image: url('assets/graphic2.svg');
+        top: 1332px;
+        left: 618px;
+        width: 900px;
+        height: 918.96px;
+        fill: #006400;
+        opacity: .5;
+        overflow: hidden;
+      }
+
